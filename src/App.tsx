@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeProvider';
 import { Header } from './components/Header';
 import { ListPage } from './pages/ListPage';
 import { DetailPage } from './pages/DetailPage';

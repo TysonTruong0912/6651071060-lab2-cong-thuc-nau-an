@@ -25,6 +25,9 @@ describe('validateEmail', () => {
   it('false với email không hợp lệ', () => {
     expect(validateEmail('abc@com')).toBe(false);
   });
+  it('false với email chứa khoảng trắng', () => {
+    expect(validateEmail('abc @example.com')).toBe(false);
+  });
 });
 
 describe('debounce', () => {
